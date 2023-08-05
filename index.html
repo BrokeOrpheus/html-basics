@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- This is a comment -->
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basics</title>
+    <base target="_blank" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      section {
+        border: 1px dotted black;
+      }
+    </style>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    <script defer src="index.js"></script>
+    <noscript>You have disabled scripts or your browser doesn't support scripts</noscript>
+
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="https://delicate-lokum-e32c09.netlify.app/">My Portfolio</a>
+        <span>|</span>
+        <a href="https://www.w3schools.com/tags/default.asp">W3 Schools Element Reference</a>
+      </nav>
+    </header>
+    <main>
+      <h1>HTML Basics</h1>
+
+      <!-- Table -->
+      <article>
+        <h2>Tables</h2>
+        <table style="border: 1px solid black;">
+          <caption>I am a table. Praise me.</caption>
+          <colgroup>
+            <col span="2" style="background-color:#A33;">
+            <col style="background-color:#33A;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Heading 1</th>
+              <th>Heading 2</th>
+              <th>Heading 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Welcome to the footer.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+
+      <hr>
+
+      <!-- Forms -->
+      <article>
+        <h2>Forms</h2>
+        <form id="form">
+          <fieldset>
+            <legend>Info</legend>
+
+            <label for="candy-input">Favourite candy:</label>
+            <input type="text" id="candy-input" list="candy" />
+            <datalist id="candy">
+              <option>3 Musketeers</option>
+              <option>Baby Ruth</option>
+              <option>Butterfinger</option>
+              <option>Kitkat</option>
+              <option>M&M's</option>
+              <option>Milkyway</option>
+              <option>Nerds</option>
+              <option>Reese's</option>
+              <option>Skittles</option>
+              <option>Smarties</option>
+              <option>Snickers</option>
+              <option>Sour Patch Kids</option>
+              <option>Starburst</option>
+              <option>Tootsie Roll</option>
+              <option>Twix</option>
+              <option>Twizzlers</option>
+            </datalist><br>
+
+            <label for="select">Favourite Animal:</label>
+            <select id="select">
+              <optgroup>
+                <option>Cat</option>
+                <option>Dog</option>
+                <option>Parrot</option>
+              </optgroup>
+            </select><br><br>
+
+            <label for="textarea">Comments:</label><br>
+            <textarea id="textarea" cols="30" rows="3"></textarea><br>
+            
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+
+        <form oninput="z.value = parseInt(x.value) + parseInt(y.value)">
+          <fieldset>
+            <legend>Maths</legend>
+            <label for="x">1st number</label>
+            <input id="x" type="number" />
+            +
+            <label for="y">2nd number</label>
+            <input id="y" type="number" />
+            =
+            <output name="z" for="x y"></output>
+          </fieldset>
+        </form>
+      </article>
+
+      <hr>
+
+      <!-- Inputs-->
+      <article>
+        <h2>Input Types</h2>
+        <h3>Button</h3>
+        <input type="button" value="Click me" />
+        <h3>Checkbox</h3>
+        <input type="checkbox" />
+        <h3>Color</h3>
+        <input type="color" />
+        <h3>Date</h3>
+        <input type="date" />
+        <h3>Datetime Local</h3>
+        <input type="datetime-local" />
+        <h3>Email</h3>
+        <input type="email" />
+        <h3>File</h3>
+        <input type="file" />
+        <h3>Hidden</h3>
+        <p>(it hidden)</p>
+        <input type="hidden" />
+        <h3>Image</h3>
+        <input type="image" src="images/denys-nevozhai-duo-xV0TU7s-unsplash.jpg" height="200" width="200" alt="image input" />
+        <h3>Month</h3>
+        <input type="month" />
+        <h3>Number</h3>
+        <input type="number" />
+        <h3>Password</h3>
+        <input type="password" />
+        <h3>Radio</h3>
+        <input type="radio" />
+        <h3>Range</h3>
+        <input type="range" />
+        <h3>Reset</h3>
+        <input type="reset" />
+        <h3>Search</h3>
+        <input type="search" />
+        <h3>Submit</h3>
+        <input type="submit" />
+        <h3>Telephone</h3>
+        <input type="tel" />
+        <h3>Text</h3>
+        <input type="text" />
+        <h3>Time</h3>
+        <input type="time" />
+        <h3>Url</h3>
+        <input type="url" />
+        <h3>Week</h3>
+        <input type="week" />
+      </article>
+
+      <hr>
+
+      <!-- Text -->
+      <article>
+        <h2>Text-based Elements</h2>
+        <section>
+          <h3>Headings</h3>
+          <h1>H1</h1>
+          <h2>H2</h2>
+          <h3>H3</h3>
+          <h4>H4</h4>
+          <h5>H5</h5>
+          <h6>H6</h6>
+        </section><br>
+        
+        <section>
+          <h3>Quotes</h3>
+          <h4>Short, Inline Quote with contenteditable attribute</h4>
+          <p contenteditable="true">My favourite quote is: <q>Get busy living or get busy dying. That's goddamn right!</q></p>
+        </section><br>
+
+        <section>
+          <h4>A Blockquote in a Details element</h4>
+          <details>
+            <summary><cite>The Shawshank Redemption</cite></summary>
+            <blockquote> Sometimes it makes me sad, though... Andy being gone. I have to remind myself that some birds aren't meant to be caged. Their feathers are just too bright. And when they fly away, the part of you that knows it was a sin to lock them up <strong>DOES</strong> rejoice. But still, the place you live in is that much more drab and empty that they're gone. I guess I just miss my friend. </blockquote>
+          </details>
+        </section><br>
+        
+        <section>
+          <h3>Text Direction</h3>
+          <h4>BDI</h4>
+          <p>This text: <bdi>أحبك</bdi>, is going the opposite direction of this sentence.</p>
+          <h4>BDO</h4>
+          <p>This text: <bdo>أحبك</bdo>, is forced the same direction as this sentence.</p>
+          <h4>DIR</h4>
+          <p dir="rtl">Hello there.</p>
+        </section><br>
+
+        <section>
+          <h3>Text Styling/Semantics</h3>
+          <h4>Abbreviation (hover)</h4>
+          <p><abbr title="HyperText Markup Language">HTML</abbr></p>
+
+          <h3>Bold</h3>
+          <p><b>Lord of the Rings</b></p>
+
+          <h3>Cite</h3>
+          <p><cite>Lord of the Rings</cite></p>
+
+          <h4>Code</h4>
+          <p>To change the url with JavaScript you can use <code>window.location</code>.</p>
+
+          <h4>Data</h4>
+          <p>Milk costs <data value="5">5</data> dollars</p>
+
+          <h4>Definition (hover)</h4>
+          <p><dfn title="A bony plate on a turtle's shell or on the back of an alligator">Scute</dfn></p>
+
+          <h4>Delete and Insert</h4>
+          <p><del>Bye.</del> <ins>Hi.</ins></p>
+
+          <h4>Emphasis</h4>
+          <p>All I ask is that you <em>GO AWAY</em></p>
+
+          <h4>Italics</h4>
+          <p>The <i>RMS Titanic</i> sank on April 15, 1912 after striking an iceberg.</p>
+
+          <h4>Keyboard (draggable)</h4>
+          <p draggable="true">In order to unlock the secrets of the universe press: <kbd>Alt + F4</kbd>.</p>
+
+          <h4>Mark</h4>
+          <p>The <mark>mark</mark> tag is useful for highlighting info.</p>
+
+          <h4>Preformatted</h4>
+          <p>Normal text vs <pre>preformatted      text</pre></p>
+
+          <h4>Sample</h4>
+          <p>I tried to go to youtube, but my computer would only render: <samp>I'm sorry, Dave. I'm afraid I can't do that.</samp> Help me.</p>
+
+          <h4>Small</h4>
+          <p>But it's becoming increasingly obvious, I can deny it no longer... <small>I am small.</small></p>
+
+          <h4>Strong</h4>
+          <p><strong>Unjustifiably in a position that I'd rather not be in</strong>, but the cream will rise to the top.</p>
+
+          <h4>Subscript</h4>
+          <p>H<sub>2</sub>O</p>
+
+          <h4>Superscript</h4>
+          <p>10<sup>2</sup></p>
+
+          <h4>Time</h4>
+          <p>I have an appointment at <time timedate="2023-08-04 10:00">10:00</time></p>
+
+          <h4>Underline</h4>
+          <p><u>This text</u> is underlined</p>
+
+          <h4>Variable</h4>
+          <p>The variable <var>x</var> is used in maths.</p>
+        </section>
+      </article>
+
+      <hr>
+
+      <!-- Lists -->
+      <section>
+        <h2>Lists</h2>
+        <h3>UL</h3>
+        <ul>
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+        </ul>
+        <h3>OL</h3>
+        <ol type="I">
+          <li>Find the house</li>
+          <li>Open the door</li>
+          <li>Go inside</li>
+          <li>Steal the jewelry</li>
+        </ol>
+        <h3>DL</h3>
+        <dl>
+          <dt><u>Esca</u></dt>
+          <dd>The lure used by angler fish to draw in prey.</dd>
+          <dt><u>Telson</u></dt>
+          <dd>The part of a scorpion that consists of the venom sac and stinger.</dd>
+        </dl>
+      </section>
+
+      <hr>
+
+      <!-- Display -->
+      <article>
+        <h2>Display</h2>
+        <section>
+          <h3>Dialog Boxes</h3>
+          <div>
+            <label for="open-button-1">Non-Modal</label>
+            <button id="open-button-1">Open</button>
+          </div>
+          <dialog id="dialog-1">
+            <p>This is a non-modal dialog box.</p>
+            <button id="close-button-1">Close</button>
+          </dialog><br>
+
+          <div>
+            <label for="open-button-2">Modal Dialog Box</label>
+            <button id="open-button-2">Open</button>
+          </div>
+          <dialog id="dialog-2">
+            <p>This is a modal dialog box.</p>
+            <button id="close-button-2">Close</button>
+          </dialog>
+        </section>
+
+        <section>
+          <h3>Bars</h3>
+          <h4>Meter</h4>
+          <div>
+            <label for="disk-space">Disk Space:</label>
+            <meter id="disk-space" value="0.7">70%</meter>
+          </div>
+
+          <h4>Progress</h4>
+          <div>
+            <label>Loading</label>
+            <progress value="40" max="100"></progress>
+          </div>
+        </section>
+
+        <section id="template-container">
+          <h3>Template</h3>
+          <button onclick="create()">Create</button>
+          <template>
+            <p>Howdy</p>
+          </template>
+        </section>
+        
+      </article>
+
+      <hr>
+
+      <!-- Embed -->
+      <article>
+        <h2>Embedded Elements</h2>
+
+        <h3>Audio</h3>
+        <audio controls src="cash-register.mp3"></audio>
+
+        <h3>Canvas</h3>
+        <canvas id="canvas" height="200px" width="200px" style="border: 1px solid black"></canvas>
+
+        <h3>Embed (image)</h3>
+        <embed type="image/jpg" src="images/sebastian-svenson-d2w-_1LJioQ-unsplash.jpg" height="150" width="200" />
+
+        <h3>Image Map in a Figure</h3>
+        <figure>
+          <img height="200" width="200" src="images/oriento-S_ncR5Q41PI-unsplash.jpg" alt="Vase sitting on a table" usemap="#img-map" />
+          <figcaption>Click the vase, duck, or table to see each one's Wiki entry.</figcaption>
+        </figure>
+
+        <map name="img-map">
+          <area shape="rect" alt="Table" coords="0,155,170,200" href="https://en.wikipedia.org/wiki/Table" />
+          <area shape="circle" alt="Duck" coords="50,145,10" href="https://en.wikipedia.org/wiki/Duck" />
+          <area shape="rect" alt="Vase" coords="85,115,105,150" href="https://en.wikipedia.org/wiki/Vase" />
+        </map>
+
+        <h3>Object (image)</h3>
+        <object data="images/gary-bendig-6GMq7AGxNbE-unsplash.jpg" height="150" width="200"></object>
+
+        <h3>Picture (changes based on viewports)</h3>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/aaron-burden-Q_5UTUA58Z4-unsplash.jpg" />
+          <img src="images/david-marcu-78A265wPiO4-unsplash.jpg" alt="field" />
+        </picture>
+
+        <h3>SVG</h3>
+        <svg>
+          <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+        </svg>
+
+        <h3>Video</h3>
+        <video height="400" controls>
+          <source src="169951 (720p).mp4" type="video/mp4" />
+        </video>
+      </article>
+    </main>
+
+    <footer>
+      <address>
+        <pre>
+          My links:
+          <a href="https://delicate-lokum-e32c09.netlify.app/">Portfolio</a>
+          <a href="https://www.linkedin.com/in/kyle-register-096143210/">LinkedIn</a>
+        </pre>
+      </address>
+    </footer>
+  </body>
+</html>

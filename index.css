@@ -1,0 +1,34 @@
+html {
+  color: #DDD;
+  background-color: #111;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p, div, dl {
+  margin-left: 15px;
+}
+
+hr {
+  color: #A56;
+  margin: 50px 0;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: #A56;
+}
+
+h2 {
+  text-decoration: underline solid #A56 2px;
+}
+
+samp {
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: red;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
